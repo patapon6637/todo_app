@@ -1,8 +1,8 @@
-import React, {useCallback, useState} from 'react';
+import React,{useState, useCallback, useRef} from 'react';
 import './App.css';
-import TodoTemplate from '../src/components/TodoTemplate';
-import TodoInsert from '../src/components/TodoInsert';
-import TodoList from '../src/components/TodoList';
+import TodoInsert from './components/TodoInsert';
+import TodoList from './components/TodoList';
+import TodoTemplate from './components/TodoTemplate';
 
 function App() {
   const [todos, setTodos] = useState([
